@@ -38,16 +38,16 @@ rentals << Rental.create([
 articles = []
 3.times do
 	articles << Article.create({
-							title: 'Ruby on Rails',
-							text: 'This is Awesome!'
+	  title: 'Ruby on Rails',
+	  text: 'This is Awesome!'
 	})
 end
 
 articles.each do |article|
 	2.times do
 		article.comments.create({
-								commenter: 'Andrew',
-								body: 'Hi! I agree'
+			commenter: 'Andrew',
+			body: 'Hi! I agree'
 		})
 	end
 end
