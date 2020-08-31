@@ -6,8 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-rentals = []
-rentals << Rental.create([
+Rental.create([
 	{
 		title: 'Grand Old Mansion',
 		owner: 'Veruca Salt',
