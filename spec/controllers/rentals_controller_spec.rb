@@ -8,7 +8,7 @@ RSpec.describe RentalsController, :type => :controller do
     it 'returns a success response' do
       get :index, params: {}
       expect(response).to have_http_status(:success)
-      expect(JSON.parse(response.body)["data"].length).to eq(10)
+      expect(response.body).to have_json_size(10).at_path('data')
     end
   end
 end
