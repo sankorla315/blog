@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :articles do 
     resources :comments
   end
+
+  jsonapi_resources :rentals
   
   root 'welcome#index'
 end
